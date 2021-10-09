@@ -1,0 +1,30 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+
+  h1 {
+    font-size: 40pt;
+  }
+
+  .auth {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    a {
+      color: black;
+    }
+    .textAuth {
+      display: flex;
+      align-items: center;
+
+      svg {
+        width: 2px;
+        height: 30px;
+        margin: 0 10px 0 10px;
+      }
+    }
+  }
+}

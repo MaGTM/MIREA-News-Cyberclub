@@ -1,0 +1,28 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.wrapper h1 {
+  font-size: 40pt;
+}
+.wrapper .auth {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.wrapper .auth a {
+  color: black;
+}
+.wrapper .auth .textAuth {
+  display: flex;
+  align-items: center;
+}
+.wrapper .auth .textAuth svg {
+  width: 2px;
+  height: 30px;
+  margin: 0 10px 0 10px;
+}
+
+/*# sourceMappingURL=Header.module.css.map */

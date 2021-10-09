@@ -1,0 +1,68 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1500px;
+}
+.wrapper .filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  width: 100%;
+}
+.wrapper .filters input {
+  border: 0;
+  border-radius: 2px;
+  background: #ffffff;
+  color: #505050;
+  padding: 15px 100px 15px 15px;
+}
+.wrapper .filters input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #196BB1 inset;
+}
+.wrapper .filters input::placeholder {
+  font-size: 15px;
+}
+.wrapper .mainContent {
+  width: 100%;
+  margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 30px 40px;
+  grid-template-areas: ". . . ." ". . . ." ". . . ." ". . . .";
+}
+.wrapper .mainContent .newsBlock {
+  position: relative;
+  box-shadow: 0 0 0 2px #196BB1 inset;
+  border-radius: 2px;
+  width: 350px;
+  height: 350px;
+  cursor: pointer;
+}
+.wrapper .mainContent .newsBlock img {
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  z-index: -1;
+  border-radius: 2px;
+  opacity: 65%;
+}
+.wrapper .mainContent .newsBlockText {
+  margin: 25px 10px 25px 10px;
+  width: 330px;
+  height: 300px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 450;
+}
+.wrapper .mainContent .newsBlockText h2 {
+  font-size: 50px;
+  position: absolute;
+}
+
+/*# sourceMappingURL=Home.module.css.map */
