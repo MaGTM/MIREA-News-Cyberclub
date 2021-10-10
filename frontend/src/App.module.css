@@ -11,6 +11,10 @@
   list-style: none;
 }
 
+html {
+  overflow-y: scroll;
+}
+
 body {
   background: #f8faff;
   display: flex;

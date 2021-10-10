@@ -30,11 +30,11 @@ const Header = (props) => {
                 {/*    </g>*/}
                 {/*</svg>*/}
                 <div className={s.textAuth}>
-                    <NavLink to={"/"}><h3>Войти</h3></NavLink>
+                    <NavLink to={"/login"}><h3>Войти</h3></NavLink>
                     <svg>
                         <rect x="0.5" y="0.5" width="2" height="30"/>
                     </svg>
-                    <NavLink to={"/"}><h3>Регистрация</h3></NavLink>
+                    <NavLink to={"/register"}><h3>Регистрация</h3></NavLink>
                 </div>
             </div>
         </div>

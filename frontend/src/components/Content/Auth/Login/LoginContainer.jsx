@@ -1,6 +1,6 @@
 import {connect} from "react-redux"
 import {compose} from "redux";
-import Home from "./Home";
+import Login from "./Login";
 
 
 
@@ -12,4 +12,4 @@ let mstp = (state) => {
 
 export default compose(
     connect(mstp, {})
-)(Home)
+)(Login)

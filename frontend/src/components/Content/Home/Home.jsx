@@ -1,9 +1,14 @@
 import React from 'react';
 import s from './Home.module.css'
-import newsBlockImage from '../../assets/photoForNewsBlock.jpg'
+import newsBlockImage from '../../../assets/photoForNewsBlock.jpg'
 import {useState} from "react";
+import {NavLink} from "react-router-dom";
 
 const Home = (props) => {
+    console.log(props.items.coverImage)
+    let itemsArray = props.items.map((i) => {
+        return <NavLink to={`/news/${i.id}`}><NewsItem title={i.title} coverImage = {i.coverImage} description = {i.description}/></NavLink>
+    })
     return (
         <div className={s.wrapper}>
             <div className={s.filters}>
@@ -11,7 +16,7 @@ const Home = (props) => {
                 <p>Выбрать месяц</p>
             </div>
             <div className={s.mainContent}>
-                { [...Array(16)].map(() => <NewsItem /> ) }
+                {itemsArray}
             </div>
         </div>
     )
@@ -34,13 +39,10 @@ let NewsItem = (props) => {
     }
     return (
         <div className={s.newsBlock} onMouseEnter={changeSetBlockHover} onMouseLeave={changeSetBlockHover}>
-            <img src={newsBlockImage} alt="" style={{opacity: blockHover ? "40%" : "100%", transition: '0.5s'}}/>
+            <img src={props.coverImage} alt="" style={{opacity: blockHover ? "40%" : "100%", transition: '0.5s'}}/>
             <div className={s.newsBlockText}>
-                <h2 style={{opacity: blockHover ? "0%" : "100%", transition: '0.3s'}}>Новость</h2>
-                <p style={{opacity: blockHover ? "100%" : "0%", transition: '0.5s'}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempor libero enim, non malesuada
-                    ex venenatis a. Vivamus et augue ipsum. Donec vitae massa cursus, vestibulum ex sed,
-                    sagittis erat. Nam ex lorem, tempus vel mi id, congue interdum est. Phasellus nunc nisl,
-                    egestas quis arcu in, consectetur molestie risus.</p>
+                <h2 style={{opacity: blockHover ? "0%" : "100%", transition: '0.3s'}}>{props.title}</h2>
+                <p style={{opacity: blockHover ? "100%" : "0%", transition: '0.5s'}}>{props.description}</p>
             </div>
         </div>
     )
