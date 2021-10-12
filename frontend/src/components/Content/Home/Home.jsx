@@ -5,17 +5,18 @@ import {useState} from "react";
 import {NavLink} from "react-router-dom";
 
 const Home = (props) => {
-    console.log(props.items.coverImage)
     let itemsArray = props.items.map((i) => {
         return <NavLink to={`/news/${i.id}`}><NewsItem title={i.title} coverImage = {i.coverImage} description = {i.description}/></NavLink>
     })
+
+    let height = Math.ceil(itemsArray.length/4)*397.5
     return (
         <div className={s.wrapper}>
             <div className={s.filters}>
                 <input type="text" placeholder={"Поиск"}/>
                 <p>Выбрать месяц</p>
             </div>
-            <div className={s.mainContent}>
+            <div className={s.mainContent} style={{height: height}}>
                 {itemsArray}
             </div>
         </div>

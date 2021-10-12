@@ -7,9 +7,6 @@ const Header = (props) => {
     return (
         <div className={s.wrapper}>
             <NavLink to={"/"}><img src={logo} alt="logo"/></NavLink>
-            <div>
-                <h1>НОВОСТИ</h1>
-            </div>
             <div className={s.auth}>
 
                 {/*<svg width="37.199" height="32.443"*/}
