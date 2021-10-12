@@ -13,3 +13,27 @@ export const newsAPI = {
             })
     }
 }
+
+export const authAPI = {
+    loginUser(data) {
+        return instance
+            .post('/login', data)
+            .then((res) => {
+                return res.data
+            })
+            .catch((e) => {
+                console.log(e.response.data)
+                return e.response.data
+            })
+    },
+    getUser(userId) {
+        return instance
+            .get(`users/${userId}`)
+            .then((res) => {
+                return res.data
+            })
+            .catch((e) => {
+                return e.response.data
+            })
+    }
+}

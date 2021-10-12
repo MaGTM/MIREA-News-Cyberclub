@@ -6,7 +6,7 @@ import {required} from "../../../../utils/formValidators";
 import {Redirect} from "react-router-dom";
 
 let Login = (props) => {
-    document.title = "Login"
+    document.title = "Авторизация - МИРЭА"
     // if (props.loading) {
     //     return <Loading/>
     // }
@@ -45,7 +45,7 @@ let LoginForm = (props) => {
         <form onSubmit={props.handleSubmit}>
             <div className={s.fields}>
                 <Field
-                    name={"username"}
+                    name={"login"}
                     type={"text"}
                     placeholder={"Имя пользователя"}
                     validate={[required]}
@@ -58,7 +58,7 @@ let LoginForm = (props) => {
                     component={inputForm}/>
             </div>
             {jsxResult}
-            <button>Login</button>
+            <button>Войти</button>
         </form>
     )
 }

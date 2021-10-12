@@ -3,8 +3,14 @@ import s from './Home.module.css'
 import newsBlockImage from '../../../assets/photoForNewsBlock.jpg'
 import {useState} from "react";
 import {NavLink} from "react-router-dom";
+import Loading from "../../common/Loading/Loading";
 
 const Home = (props) => {
+
+    if (props.loading) {
+        return <Loading/>
+    }
+
     let itemsArray = props.items.map((i) => {
         return <NavLink to={`/news/${i.id}`}><NewsItem title={i.title} coverImage = {i.coverImage} description = {i.description}/></NavLink>
     })

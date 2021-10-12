@@ -1,0 +1,53 @@
+// Loading Settings
+$size: 15px;
+$color: #2c7873;
+
+.wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+
+    li {
+      content: '';
+      display: block;
+      width: $size;
+      height: $size;
+      background: #2c7873;
+      border-radius: 100%;
+      animation: pulsing 1s infinite;
+
+      @keyframes pulsing {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(0.2);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+    }
+
+    @for $i from 1 through 6 {
+      li {
+        &:nth-child(#{$i}) {
+          animation-delay: $i * (1s / 18);
+        }
+      }
+    }
+  }
+}

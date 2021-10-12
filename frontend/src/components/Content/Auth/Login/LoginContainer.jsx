@@ -1,15 +1,13 @@
-import {connect} from "react-redux"
-import {compose} from "redux";
+import {connect} from "react-redux";
 import Login from "./Login";
-
-
+import {loginUser, setResult} from "../../../../redux/auth";
 
 let mstp = (state) => {
     return {
-
+        loading: state.auth.isLoading,
+        result: state.auth.result,
+        token: state.auth.token,
     }
 }
 
-export default compose(
-    connect(mstp, {})
-)(Login)
+export default connect(mstp, {loginUser, setResult})(Login)

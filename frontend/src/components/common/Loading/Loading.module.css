@@ -1,0 +1,58 @@
+.wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+}
+.wrapper ul li {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  background: #2c7873;
+  border-radius: 100%;
+  animation: pulsing 1s infinite;
+}
+@keyframes pulsing {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.wrapper ul li:nth-child(1) {
+  animation-delay: 0.0555555556s;
+}
+.wrapper ul li:nth-child(2) {
+  animation-delay: 0.1111111111s;
+}
+.wrapper ul li:nth-child(3) {
+  animation-delay: 0.1666666667s;
+}
+.wrapper ul li:nth-child(4) {
+  animation-delay: 0.2222222222s;
+}
+.wrapper ul li:nth-child(5) {
+  animation-delay: 0.2777777778s;
+}
+.wrapper ul li:nth-child(6) {
+  animation-delay: 0.3333333333s;
+}
+
+/*# sourceMappingURL=Loading.module.css.map */

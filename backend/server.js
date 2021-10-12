@@ -56,7 +56,9 @@ server.post('/login', (req, res) => {
       router.db.get('tokens').push(token).write();
 
       res.json({
-        accessToken: token
+        token: token,
+        message: 'User Authorized',
+        userId: user.id
       });
     }
   });

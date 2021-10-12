@@ -1,10 +1,10 @@
 export const required = value => {
     if(value) return undefined
 
-    return true
+    return 'Это обязательное поле'
 }
 
-export const maxLength = (length) => {
+export const maxLengthUser = (length) => {
     return (value) => {
         if(value.length > length) return `Максимальная длина ${length}`
 
@@ -12,9 +12,17 @@ export const maxLength = (length) => {
     }
 }
 
-export const minLength = (length) => {
+export const minLengthPassword = (length) => {
     return (value) => {
-        if(value.length < length) return `Минимальная длина ${length}`
+        if(value.length < length) return `Минимальная длина пароля ${length} символов`
+
+        return undefined
+    }
+}
+
+export const minLengthUser = (length) => {
+    return (value) => {
+        if(value.length < length) return `Минимальная длина ${length} символа`
 
         return undefined
     }

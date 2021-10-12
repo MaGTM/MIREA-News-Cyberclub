@@ -12,6 +12,14 @@
   align-items: center;
   justify-content: space-between;
 }
+.wrapper .auth .account {
+  display: flex;
+  align-items: center;
+}
+.wrapper .auth .account #username {
+  text-transform: uppercase;
+  margin-left: 10px;
+}
 .wrapper .auth a {
   color: black;
 }
