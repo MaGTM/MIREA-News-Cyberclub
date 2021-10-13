@@ -22,7 +22,6 @@ export const authAPI = {
                 return res.data
             })
             .catch((e) => {
-                console.log(e.response.data)
                 return e.response.data
             })
     },
@@ -33,6 +32,18 @@ export const authAPI = {
                 return res.data
             })
             .catch((e) => {
+                return e.response.data
+            })
+    },
+
+    createUser(data) {
+        return instance
+            .post('/register', data)
+            .then((res) => {
+                return res.data
+            })
+            .catch((e) => {
+                console.log(e.response.data)
                 return e.response.data
             })
     }

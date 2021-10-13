@@ -16,6 +16,7 @@
   background: #ffffff;
   color: #505050;
   padding: 15px 100px 15px 15px;
+  user-select: none;
 }
 .wrapper .filters input:focus {
   outline: none;
@@ -33,7 +34,10 @@
   gap: 30px 40px;
   grid-template-areas: ". . . ." ". . . ." ". . . ." ". . . .";
 }
-.wrapper .mainContent .newsBlock {
+.wrapper .mainContent a {
+  width: 350px;
+}
+.wrapper .mainContent a .newsBlock {
   position: relative;
   box-shadow: 0 0 0 2px #196BB1 inset;
   border-radius: 2px;
@@ -41,7 +45,7 @@
   height: 350px;
   cursor: pointer;
 }
-.wrapper .mainContent .newsBlock img {
+.wrapper .mainContent a .newsBlock img {
   position: absolute;
   width: 350px;
   height: 350px;
@@ -49,8 +53,8 @@
   border-radius: 2px;
   opacity: 65%;
 }
-.wrapper .mainContent .newsBlockText {
-  margin: 25px 10px 25px 10px;
+.wrapper .mainContent a .newsBlockText {
+  padding: 25px 10px 25px 10px;
   width: 330px;
   height: 300px;
   display: flex;
@@ -59,19 +63,22 @@
   font-weight: 450;
   color: white;
 }
-.wrapper .mainContent .newsBlockText h2 {
+.wrapper .mainContent a .newsBlockText h2 {
   font-size: 50px;
   position: absolute;
   text-align: center;
   top: 50%;
-  transform: translateY(-50%);
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 350px;
 }
-.wrapper .mainContent .newsBlockText p {
+.wrapper .mainContent a .newsBlockText p {
   color: black;
   text-align: center;
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 330px;
 }
 

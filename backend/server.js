@@ -27,7 +27,7 @@ server.use(jsonServer.bodyParser);
 server.use((req, res, next) => {
   let authorized = false;
 
-  if (req.method === 'GET' || req.path === '/login') {
+  if (req.method === 'GET' || req.path === '/login' || req.path === '/register') {
     next();
   } else {
     const token = req.headers.authorization;
@@ -63,6 +63,30 @@ server.post('/login', (req, res) => {
     }
   });
 });
+
+// Registration
+server.post('/register', (req, res) => {
+  const credentials = req.body;
+
+  let error = false
+
+  router.db.get('users').value().forEach((user) => {
+    if (user.login === credentials.login) {
+      error = true
+      res.json({
+        message: 'User already exists',
+      });
+    }
+  });
+
+  if(!error) {
+    router.db.get('users').push({id: router.db.get('users').value().length + 1, login: credentials.login, password: credentials.password}).write();
+    res.json({
+      message: 'User Created',
+    });
+  }
+});
+
 
 // Default json-server behaviour
 server.use(router);

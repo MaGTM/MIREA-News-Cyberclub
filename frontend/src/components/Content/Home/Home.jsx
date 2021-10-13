@@ -1,6 +1,5 @@
 import React from 'react';
 import s from './Home.module.css'
-import newsBlockImage from '../../../assets/photoForNewsBlock.jpg'
 import {useState} from "react";
 import {NavLink} from "react-router-dom";
 import Loading from "../../common/Loading/Loading";

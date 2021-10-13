@@ -53,23 +53,6 @@ export let setUserData = (id, token, auth) => ({type: SET_USER_DATA_AUTH, id, to
 export let setUsername = (username) => ({type: SET_USERNAME_AUTH, username})
 
 //Thunks
-export const createUser = (data) => {
-    return (dispatch) => {
-        dispatch(setResult(null))
-        dispatch(isLoading(true))
-        authAPI.createUser(data)
-            .then((res) => {
-                dispatch(isLoading(false))
-                dispatch(setResult(true))
-                return res
-            })
-            .catch((e)=> {
-                debugger
-                dispatch(isLoading(false))
-                dispatch(setResult(false))
-            })
-    }
-}
 export const loginUser = (data) => {
     return (dispatch) => {
         dispatch(setResult(null))
@@ -86,6 +69,39 @@ export const loginUser = (data) => {
                 dispatch(setUserData(res.userId, res.token, true))
                 localStorage.setItem('token', res.token)
                 localStorage.setItem('userId', res.userId)
+            })
+    }
+}
+
+export const createUser = (data) => {
+    return (dispatch) => {
+        dispatch(setResult(null))
+        dispatch(isLoading(true))
+        authAPI.createUser(data)
+            .then((res) => {
+                dispatch(isLoading(false))
+                dispatch(setResult(res.message))
+                if(res.message === 'User Created') {
+                    dispatch(isLoading(true))
+                    authAPI.loginUser(data)
+                        .then((res) => {
+                            if(res.status === 400) {
+                                dispatch(isLoading(false))
+                                dispatch(setResult(res.message))
+                                return
+                            }
+                            dispatch(isLoading(false))
+                            dispatch(setResult(res.message))
+                            dispatch(setUserData(res.userId, res.token, true))
+                            localStorage.setItem('token', res.token)
+                            localStorage.setItem('userId', res.userId)
+                        })
+                }
+                return res
+            })
+            .catch((e)=> {
+                dispatch(isLoading(false))
+                dispatch(setResult(false))
             })
     }
 }

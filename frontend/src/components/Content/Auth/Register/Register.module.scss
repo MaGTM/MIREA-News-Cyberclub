@@ -13,6 +13,23 @@
     border-bottom: 1px black solid;
     padding: 10px 0 30px 0;
 
+    .auth {
+      color: white;
+      padding: 5px;
+      width: 200px;
+      text-align: center;
+      border-radius: 2px;
+      margin-bottom: 20px;
+
+      &.errorAuth {
+        background: #fa6767;
+      }
+
+      &.successAuth {
+        background: #a2fa67;
+      }
+    }
+
     h1 {
       font-size: 50px;
       margin-bottom: 30px;

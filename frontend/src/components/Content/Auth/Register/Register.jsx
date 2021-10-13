@@ -4,14 +4,15 @@ import {Field, formValueSelector, reduxForm} from "redux-form";
 import {isMatch, maxLengthUser, minLengthPassword, minLengthUser, required} from "../../../../utils/formValidators";
 import inputForm from "../../../common/forms/inputForm";
 import {Redirect} from "react-router-dom";
+import Loading from "../../../common/Loading/Loading";
 
 
 // Components
 const Register = (props) => {
     document.title = "Регистрация - МИРЭА"
-    // if (props.loading) {
-    //     return <Loading/>
-    // }
+    if (props.loading) {
+        return <Loading/>
+    }
     let submitForm = (data) => {
         props.createUser(data)
     }
@@ -20,7 +21,7 @@ const Register = (props) => {
         <div className={s.wrapper}>
             <div className={s.form_wrapper}>
                 <h1>Регистрация</h1>
-                <RegisterForm onSubmit={submitForm} result={true}/>
+                <RegisterForm onSubmit={submitForm} result={props.result}/>
             </div>
         </div>
     )
@@ -28,16 +29,16 @@ const Register = (props) => {
 
 let RegisterForm = (props) => {
     let jsxResult
-    if(props.result === true) {
-        jsxResult = <span className={s.auth + ' ' + s.successAuth}>Пользователь создан успешно</span>
-    } else if(props.result === false) {
-        jsxResult = <span className={s.auth + ' ' + s.errorAuth}>Что-то пошло не так, попробуйте снова :(</span>
+    if(props.result === 'User Created') {
+        return <Redirect to={"/"}/>
+    } else if(props.result === 'User already exists') {
+        jsxResult = <span className={s.auth + ' ' + s.errorAuth}>Пользователь с таким именем уже существует</span>
     }
     return (
         <form onSubmit={props.handleSubmit}>
             <div className={s.fields}>
                 <Field
-                    name={"username"}
+                    name={"login"}
                     type={"text"}
                     placeholder={"Имя пользователя"}
                     validate={[required, maxLengthUser(30), minLengthUser(3)]}

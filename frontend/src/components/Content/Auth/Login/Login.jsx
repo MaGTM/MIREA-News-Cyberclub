@@ -4,12 +4,13 @@ import {Field, reduxForm} from "redux-form";
 import inputForm from "../../../common/forms/inputForm";
 import {required} from "../../../../utils/formValidators";
 import {Redirect} from "react-router-dom";
+import Loading from "../../../common/Loading/Loading";
 
 let Login = (props) => {
     document.title = "Авторизация - МИРЭА"
-    // if (props.loading) {
-    //     return <Loading/>
-    // }
+    if (props.loading) {
+        return <Loading/>
+    }
 
     let submitForm = (data) => {
         props.loginUser(data)
@@ -17,6 +18,7 @@ let Login = (props) => {
 
     return (
         <div className={s.wrapper}>
+
             <div className={s.form_wrapper}>
                 <h1>Авторизация</h1>
                 <LoginForm onSubmit={submitForm} result={props.result} setResult={props.setResult} token={props.token}/>
