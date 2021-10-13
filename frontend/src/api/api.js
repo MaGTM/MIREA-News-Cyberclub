@@ -5,9 +5,16 @@ const instance = axios.create({
 })
 
 export const newsAPI = {
-    getNews(token) {
+    getNews() {
         return instance
-            .get('articles')
+            .get('/articles')
+            .then((res) => {
+                return res.data
+            })
+    },
+    getProfileNews(newsId, token) {
+        return instance
+            .post(`/getnews`, newsId, {headers: {Authorization: `Bearer ${token}`}})
             .then((res) => {
                 return res.data
             })
@@ -35,7 +42,6 @@ export const authAPI = {
                 return e.response.data
             })
     },
-
     createUser(data) {
         return instance
             .post('/register', data)

@@ -7,7 +7,7 @@
         "business",
         "bitcoin"
       ],
-      "author": "Nick Chong",
+      "author": "admin",
       "title": "Bitcoin Sets New All-Time High at $49,400",
       "description": "Bitcoin just rocketed to a new all-time high at $49,400 despite consolidation in the price of Ethereum. The leading cryptocurrency set this new high after spending most of the past week in the $47,000 range. Bitcoin is moving higher on continued institutional…",
       "coverImage": "https://www.newsbtc.com/wp-content/uploads/2021/02/ken-cheung-10py7Mvmf1g-unsplash.jpg",
@@ -21,7 +21,7 @@
         "business",
         "bitcoin"
       ],
-      "author": "Nick Chong",
+      "author": "admin",
       "title": "Bitcoin Sets New All-Time High at $49,400",
       "description": "Bitcoin just rocketed to a new all-time high at $49,400 despite consolidation in the price of Ethereum. The leading cryptocurrency set this new high after spending most of the past week in the $47,000 range. Bitcoin is moving higher on continued institutional…",
       "coverImage": "https://www.newsbtc.com/wp-content/uploads/2021/02/ken-cheung-10py7Mvmf1g-unsplash.jpg",
@@ -35,7 +35,7 @@
         "business",
         "bitcoin"
       ],
-      "author": "Nick Chong",
+      "author": "admin",
       "title": "Bitcoin Sets New All-Time High at $49,400",
       "description": "Bitcoin just rocketed to a new all-time high at $49,400 despite consolidation in the price of Ethereum. The leading cryptocurrency set this new high after spending most of the past week in the $47,000 range. Bitcoin is moving higher on continued institutional…",
       "coverImage": "https://www.newsbtc.com/wp-content/uploads/2021/02/ken-cheung-10py7Mvmf1g-unsplash.jpg",
@@ -47,66 +47,21 @@
     {
       "id": 1,
       "login": "admin",
-      "password": "pa$$word"
+      "password": "pa$$word",
+      "newsBlocksId": [
+        1,
+        2,
+        3
+      ]
     },
     {
       "id": 2,
       "login": "parker",
-      "password": "root666"
-    },
-    {
-      "id": 3,
-      "login": "admin1",
-      "password": "pa$$word"
-    },
-    {
-      "id": 4,
-      "login": "admin5",
-      "password": "123456"
-    },
-    {
-      "id": 5,
-      "login": "meepotraintm",
-      "password": "123456"
-    },
-    {
-      "id": 6,
-      "login": "meepotraintmsgf",
-      "password": "123456"
-    },
-    {
-      "id": 7,
-      "login": "uporoff.maxim@yandex.ru",
-      "password": "123456"
-    },
-    {
-      "id": 8,
-      "login": "admin54",
-      "password": "123456"
-    },
-    {
-      "id": 9,
-      "login": "sasha-uporova@yandex.ru",
-      "password": "123456"
-    },
-    {
-      "id": 10,
-      "login": "uporov.m.n@edu.mirea.ru",
-      "password": "123456"
-    },
-    {
-      "id": 11,
-      "login": "admin65",
-      "password": "123456"
+      "password": "root666",
+      "newsBlocksId": []
     }
   ],
   "tokens": [
-    "oeYdjdT8pIJZnJLEA66A1PZwQF6IjalWYccvrMT3X6aSMSSaxcsqA3dQ7oZ8XNuhJM1yH8MEStVC2KtA2zstclMirjPFu2Biosv9",
-    "cv99Za4L7ec5fQnuwL1WIawLPyFllRPYMzk8bDy7iYtZs63TuYF1izu8WixBMHtmUcPX0uzG1XQjkv3AWXEOmeQD9VbYJ4ZUwsD7",
-    "sYRUBwwWe15GmUTrIWLFxKvmVv2aifVOaC8b57Kz8yjW2EAznImxiWWYNAEQ5qPVEoFNRMIbHf1ECBLGZkqxH4mow88LBbzOveej",
-    "CDGGblhoeypsULgtX0b4HfPqoDAMxi5Mm1uqbwewlUKdmVuwtC2tUoaHlCMrLPuQ8yNuPDdJ4izOtKNUquO1FGzWv9EOrHjgSVCP",
-    "0T3Xc8BznL8ZHy9vFIBnKCcoSHPc6qKoze1eVu67C1wxPgDWSkaAR3tCzFwOZSjZRg5rzDIF32vlPtBZ9NsS3wqwgepQSZgpMor8",
-    "YOmXoxB21c4N9yYP9KmcD5xQZ8gZzgkP2UkYEamIUfdFtyVhEHGPMNDC1laSsY6RxNfm7zBjpkjeZPWNW0KNikauVEzqHZuFBDlT",
-    "kqSH19pBvVwYU8JuABaLXorQXrBO5f7Rb2ejaWLcX7ie1ua9BNBuCwHKEHRaQ4oQsszvCTwBpJz0ygrA10XGQ8Wos7Qg1OORJqEL"
+    "X1ktbVgjprZvnyLYVPLq1ToMrNydIxCgej9wuHUEaVWFQei6KRr7UFHl1okyIZDNik0zrdNZkFWo6ogozk3OMEU9DQCJRtsz9a6e"
   ]
 }

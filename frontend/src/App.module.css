@@ -30,6 +30,9 @@ body .wrapper {
 body .wrapper .content {
   margin-top: 150px;
   width: 1700px;
+  border-left: 2px black solid;
+  border-right: 2px black solid;
+  padding: 0 10px 0 10px;
 }
 
 /*# sourceMappingURL=App.module.css.map */

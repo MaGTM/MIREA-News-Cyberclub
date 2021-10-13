@@ -80,11 +80,32 @@ server.post('/register', (req, res) => {
   });
 
   if(!error) {
-    router.db.get('users').push({id: router.db.get('users').value().length + 1, login: credentials.login, password: credentials.password}).write();
+
+    router.db.get('users').push({
+      id: router.db.get('users').value().length + 1,
+      login: credentials.login,
+      password: credentials.password,
+      newsBlocksId: []}).write();
+
     res.json({
       message: 'User Created',
     });
   }
+});
+
+// News Blocks for Profile
+server.post('/getnews', (req, res) => {
+  let newsBlocksId = req.body
+  let newsBlocks = []
+  console.log(req.body)
+
+  newsBlocksId.forEach((id) => {
+    newsBlocks.push(router.db.get('articles').value()[id-1])
+  })
+
+  res.json({
+    newsBlocks: newsBlocks
+  })
 });
 
 

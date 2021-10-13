@@ -5,7 +5,7 @@ import HeaderContainer from "./components/Header/HeaderContainer";
 import HomeContainer from "./components/Content/Home/HomeContainer";
 import LoginContainer from "./components/Content/Auth/Login/LoginContainer";
 import RegisterContainer from "./components/Content/Auth/Register/RegisterContainer";
-import Loading from "./components/common/Loading/Loading";
+import ProfileContainer from "./components/Content/Profile/ProfileContainer";
 
 const App = (props) => {
     return (
@@ -16,6 +16,7 @@ const App = (props) => {
                     <Route exact path={"/"} component={HomeContainer}/>
                     <Route path={"/login"} component={LoginContainer}/>
                     <Route path={"/register"} component={RegisterContainer}/>
+                    <Route exact path={"/profile"} component={ProfileContainer}/>
                 </div>
             </div>
         </BrowserRouter>

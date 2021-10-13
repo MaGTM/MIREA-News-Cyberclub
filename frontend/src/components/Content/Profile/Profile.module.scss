@@ -1,0 +1,35 @@
+.wrapper {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+  .userBlock {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    justify-content: space-between;
+    img {
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  .newsBlock {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+
+    a {
+      color: black;
+    }
+
+    &Item {
+      width: 400px;
+      background: #fff;
+      padding: 20px 100px 20px 100px;
+      margin-bottom: 20px;
+      border: 2px black solid;
+      border-radius: 10px;
+    }
+  }
+}
