@@ -108,7 +108,7 @@ export const createUser = (data) => {
 
 export const logoutUser = () => {
     return dispatch => {
-        localStorage.removeItem('id')
+        localStorage.removeItem('userId')
         localStorage.removeItem('token')
         dispatch(setUsername(null))
         dispatch(setUserData(null, null, false))

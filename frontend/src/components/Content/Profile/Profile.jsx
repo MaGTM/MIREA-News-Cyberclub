@@ -14,11 +14,16 @@ const Profile = (props) => {
         <div className={s.wrapper}>
             <div className={s.userBlock}>
                 <img src={avatar} alt={props.login}/>
-                <h2>{props.login}</h2>
+                <div>
+                    <h2>{props.login}</h2>
+                    <h3 onClick={props.logoutUser}>Выйти</h3>
+                </div>
             </div>
+            <NavLink to={'/profile/creation'}>Новая новость</NavLink>
             <div className={s.newsBlock}>
                 {itemsArray}
             </div>
+
         </div>
     )
 }

@@ -4,6 +4,7 @@ import {getUserData, getUserNewsData} from "../../../redux/profile"
 import {connect} from "react-redux"
 import { withAuthRedirect } from "../../common/hoc/withAuthRedirect"
 import Loading from "../../common/Loading/Loading";
+import {logoutUser} from "../../../redux/auth";
 
 
 class ProfileContainer extends React.Component {
@@ -37,4 +38,4 @@ let mstp = (state) => {
     }
 }
 
-export default connect(mstp, {getUserData, getUserNewsData})(withAuthRedirect(ProfileContainer))
+export default connect(mstp, {getUserData, getUserNewsData, logoutUser})(withAuthRedirect(ProfileContainer))

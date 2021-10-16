@@ -1,0 +1,58 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.wrapper form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+.wrapper form .contentCreation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.wrapper form .contentCreation .upperPart {
+  display: flex;
+  justify-content: space-between;
+  width: 380px;
+}
+.wrapper form .contentCreation .upperPart input {
+  width: 180px;
+}
+.wrapper form .contentCreation input, .wrapper form .contentCreation textarea {
+  width: 380px;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+}
+.wrapper form .contentCreation .tagsContainer {
+  display: flex;
+  width: 380px;
+  height: 50px;
+  justify-content: space-between;
+}
+.wrapper form .contentCreation .tagsContainer input {
+  width: 180px;
+}
+.wrapper form .contentCreation .tagsContainer .tags {
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  width: 180px;
+  height: 40px;
+  border-radius: 2px;
+}
+.wrapper form .contentCreation .tagsContainer .tags span {
+  padding: 2px 3px;
+}
+.wrapper form button {
+  border: none;
+  cursor: pointer;
+  padding: 5px 20px;
+}
+
+/*# sourceMappingURL=NewsCreation.module.css.map */

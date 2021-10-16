@@ -12,6 +12,22 @@
       width: 100px;
       height: 100px;
     }
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      h3 {
+        background: #196BB1;
+        padding: 5px 10px;
+        color: white;
+        cursor: pointer;
+        border-radius: 2px;
+        transition: 0.2s;
+         &:hover {
+           filter: brightness(0.8);
+         }
+      }
+    }
   }
 
   .newsBlock {

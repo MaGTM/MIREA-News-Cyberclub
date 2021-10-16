@@ -97,7 +97,6 @@ server.post('/register', (req, res) => {
 server.post('/getnews', (req, res) => {
   let newsBlocksId = req.body
   let newsBlocks = []
-  console.log(req.body)
 
   newsBlocksId.forEach((id) => {
     newsBlocks.push(router.db.get('articles').value()[id-1])
@@ -108,6 +107,30 @@ server.post('/getnews', (req, res) => {
   })
 });
 
+// Create New Article
+server.post('/create', (req, res) => {
+  const data = req.body;
+
+  let yourDate = new Date()
+  const offset = yourDate.getTimezoneOffset()
+  yourDate = new Date(yourDate.getTime() - (offset * 60 * 1000))
+
+  router.db.get('articles').push({
+    id: router.db.get('articles').value().length + 1,
+    source: data.source,
+    tags: data.tags,
+    author: data.login,
+    title: data.title,
+    description: data.description,
+    coverImage: data.coverImage,
+    publishedAt: yourDate.toISOString().split('T')[0],
+    content: data.content,
+  }).write()
+
+  res.json({
+    message: "Successful"
+  })
+})
 
 // Default json-server behaviour
 server.use(router);

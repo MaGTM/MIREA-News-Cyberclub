@@ -41,6 +41,20 @@
       "coverImage": "https://www.newsbtc.com/wp-content/uploads/2021/02/ken-cheung-10py7Mvmf1g-unsplash.jpg",
       "publishedAt": "2021-02-14T07:58:16Z",
       "content": "Bitcoin just rocketed to a new all-time high at $49,400 despite consolidation in the price of Ethereum. The leading cryptocurrency set this new high after spending most of the past week in the $47,00… [+2028 chars]"
+    },
+    {
+      "id": 4,
+      "source": "Allah",
+      "tags": [
+        "niggers",
+        "milf"
+      ],
+      "author": "admin",
+      "title": "How much money do niggers make when they're fucking with mifls",
+      "description": "Incredible news for everyone who wants to be a fucking nigger and who loves milfs",
+      "coverImage": "https://bugaga.ru/uploads/posts/2017-03/1489052030_kotik-hosiko-12.jpg",
+      "publishedAt": "2021-10-16",
+      "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
     }
   ],
   "users": [
@@ -51,7 +65,8 @@
       "newsBlocksId": [
         1,
         2,
-        3
+        3,
+        4
       ]
     },
     {
@@ -62,6 +77,8 @@
     }
   ],
   "tokens": [
-    "X1ktbVgjprZvnyLYVPLq1ToMrNydIxCgej9wuHUEaVWFQei6KRr7UFHl1okyIZDNik0zrdNZkFWo6ogozk3OMEU9DQCJRtsz9a6e"
+    "X1ktbVgjprZvnyLYVPLq1ToMrNydIxCgej9wuHUEaVWFQei6KRr7UFHl1okyIZDNik0zrdNZkFWo6ogozk3OMEU9DQCJRtsz9a6e",
+    "gLpwazGhiCOlk5yc8MSZZZzf65ASYnkolW0XWkMOOxkiQV0i2pkFwg8qSUuxnpfBRqX0sPRX440uCCStNlUMFmEXLZPRsZYfgX0n",
+    "DScjarPclkMJfpkY7XkS50tIehPGrbxDUe8A1GpsiR1PsPzZMzQJgUaq4NLA2Y2xZCZ7HSGAf2RJNaBfrPRaDsWHkoVmQ0CKyTyb"
   ]
 }

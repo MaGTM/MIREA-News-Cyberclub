@@ -4,6 +4,7 @@ import {authAPI, newsAPI} from "../api/api"
 const IS_LOADING_PROFILE = "IS_LOADING_PROFILE"
 const GET_USER_DATA_PROFILE = "GET_USER_DATA_PROFILE"
 const SET_NEWS_BLOCKS_PROFILE = "SET_NEWS_BLOCKS_PROFILE"
+const CREATE_NEW_ARTICLE =  "CREATE_NEW_ARTICLE"
 
 // State and reducer
 let initialState = {

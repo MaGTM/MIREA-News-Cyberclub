@@ -6,6 +6,7 @@ import HomeContainer from "./components/Content/Home/HomeContainer";
 import LoginContainer from "./components/Content/Auth/Login/LoginContainer";
 import RegisterContainer from "./components/Content/Auth/Register/RegisterContainer";
 import ProfileContainer from "./components/Content/Profile/ProfileContainer";
+import NewsCreationContainer from "./components/Content/Profile/NewsCreation/NewsCreationContainer";
 
 const App = (props) => {
     return (
@@ -17,6 +18,8 @@ const App = (props) => {
                     <Route path={"/login"} component={LoginContainer}/>
                     <Route path={"/register"} component={RegisterContainer}/>
                     <Route exact path={"/profile"} component={ProfileContainer}/>
+                    {/*<Route path={"/profile/news/:id"} component={}/>*/}
+                    <Route path={"/profile/creation"} component={NewsCreationContainer}/>
                 </div>
             </div>
         </BrowserRouter>

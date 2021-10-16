@@ -18,6 +18,14 @@ export const newsAPI = {
             .then((res) => {
                 return res.data
             })
+    },
+
+    createArticle(data, token) {
+        return instance
+            .post(`/create`, data, {headers: {Authorization: `Bearer ${token}`}})
+            .then((res) => {
+                return res.data
+            })
     }
 }
 

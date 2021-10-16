@@ -4,11 +4,13 @@ import thunkMiddleware from "redux-thunk";
 import news from "./news";
 import auth from "./auth";
 import profile from "./profile";
+import tags from "./tags";
 
 let Reducers = combineReducers({
     news,
     auth,
     profile,
+    tags,
     form: formReducer,
 })
 
