@@ -5,6 +5,7 @@ import {Redirect} from "react-router-dom";
 import {maxLengthUser, required} from "../../../../utils/formValidators";
 import NewsCreationInputForm from "../../../common/forms/newsCreationInputForm";
 import Loading from "../../../common/Loading/Loading";
+import NewsCreationTextareaForm from "../../../common/forms/newsCreationTextareaForm";
 
 const maxLengthTitle = maxLengthUser(60)
 const maxLengthDescription = maxLengthUser(127)
@@ -12,7 +13,6 @@ const maxLengthSource = maxLengthUser(30)
 
 let NewsCreation = (props) => {
     let submitForm = (values) => {
-        console.log(props.login)
         let data = {
             ...values,
             login: props.login,
@@ -55,7 +55,7 @@ const NewsForm = (props) => {
 
 
     return (
-        <form id={s.form} onSubmit={props.handleSubmit}>
+        <form onSubmit={props.handleSubmit}>
             <div className={s.contentCreation}>
                 <div className={s.upperPart}>
                     <Field
@@ -80,7 +80,7 @@ const NewsForm = (props) => {
                     cols="50"
                     rows="5"
                     placeholder="Описание"
-                    component={"textarea"}
+                    component={NewsCreationTextareaForm}
                     validate={[required, maxLengthDescription]}
                 />
                 <h4>Вводите теги через запятые и без пробелов</h4>
@@ -102,7 +102,7 @@ const NewsForm = (props) => {
                     cols="50"
                     rows="20"
                     placeholder="Полный текст"
-                    component={"textarea"}
+                    component={NewsCreationTextareaForm}
                     validate={[required, maxLengthDescription]}
                 />
                 <Field
@@ -115,14 +115,13 @@ const NewsForm = (props) => {
 
 
             </div>
-            {/*{props.errorIs ? <div className={s.error}>Упс! Что-то пошло не так</div> : ""}*/}
             <button>Создать</button>
         </form>
     );
 
 }
 
-const NewsReduxForm = reduxForm({form: "newsCreationForm"})(NewsForm)
+const NewsReduxForm = reduxForm({form: "newsCreationForm", touchOnBlur: false})(NewsForm)
 
 
 export default NewsCreation

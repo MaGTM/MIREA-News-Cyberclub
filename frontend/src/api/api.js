@@ -60,7 +60,6 @@ export const authAPI = {
                 return res.data
             })
             .catch((e) => {
-                console.log(e.response.data)
                 return e.response.data
             })
     }

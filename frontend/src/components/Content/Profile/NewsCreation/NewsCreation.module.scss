@@ -27,7 +27,7 @@
       input, textarea {
         width: 380px;
         padding: 5px 10px;
-        margin-bottom: 10px;
+        margin-bottom: 15px;
       }
 
       .tagsContainer {
@@ -35,8 +35,10 @@
         width: 380px;
         height: 50px;
         justify-content: space-between;
+        margin-top: 5px;
         input {
           width: 180px;
+          height: 40px;
         }
         .tags {
           overflow-y: auto;

@@ -2,7 +2,7 @@ import {connect} from "react-redux";
 import {withRouter} from "react-router-dom";
 import {withAuthRedirect} from "../../../common/hoc/withAuthRedirect";
 import NewsCreation from "./NewsCreation";
-import {createNewArticle, getUserData, getUserNewsData, isCreated} from "../../../../redux/profile";
+import {createNewArticle, getUserData, isCreated} from "../../../../redux/profile";
 
 let mstp = (state) => {
     return {
@@ -16,4 +16,4 @@ let mstp = (state) => {
     }
 }
 
-export default connect(mstp, {createNewArticle, isCreated, getUserNewsData, getUserData})(withRouter(withAuthRedirect(NewsCreation)))
+export default connect(mstp, {createNewArticle, isCreated, getUserData})(withRouter(withAuthRedirect(NewsCreation)))
