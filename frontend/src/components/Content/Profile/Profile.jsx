@@ -19,7 +19,7 @@ const Profile = (props) => {
                     <h3 onClick={props.logoutUser}>Выйти</h3>
                 </div>
             </div>
-            <NavLink to={'/profile/creation'}>Новая новость</NavLink>
+            <NavLink to={'/profile/creation'} id={s.creationBtn}>Новая новость</NavLink>
             <div className={s.newsBlock}>
                 {itemsArray}
             </div>

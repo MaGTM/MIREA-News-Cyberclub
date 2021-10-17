@@ -127,6 +127,11 @@ server.post('/create', (req, res) => {
     content: data.content,
   }).write()
 
+  router.db.get('users').splice(data.id-1, 1, {
+    ...router.db.get('users').value()[data.id-1],
+    newsBlocksId: [...router.db.get('users').value()[data.id-1].newsBlocksId ,router.db.get('articles').value().length]
+  }).write()
+
   res.json({
     message: "Successful"
   })

@@ -3,6 +3,8 @@ import s from './NewsCreation.module.css'
 import {Field, reduxForm} from "redux-form";
 import {Redirect} from "react-router-dom";
 import {maxLengthUser, required} from "../../../../utils/formValidators";
+import NewsCreationInputForm from "../../../common/forms/newsCreationInputForm";
+import Loading from "../../../common/Loading/Loading";
 
 const maxLengthTitle = maxLengthUser(60)
 const maxLengthDescription = maxLengthUser(127)
@@ -10,8 +12,24 @@ const maxLengthSource = maxLengthUser(30)
 
 let NewsCreation = (props) => {
     let submitForm = (values) => {
-        // props.createArticle(values, props.token)
-        console.log(values)
+        console.log(props.login)
+        let data = {
+            ...values,
+            login: props.login,
+            tags: values.tags.split(/[\s,]+/),
+            id: props.userId
+        }
+        props.createNewArticle(data, props.token)
+    }
+
+    if (props.isLoading) {
+        return <Loading/>
+    }
+
+    if(props.created) {
+        props.isCreated()
+        props.getUserData(props.userId)
+        return <Redirect to={"/"} />
     }
 
 
@@ -44,7 +62,7 @@ const NewsForm = (props) => {
                         name={"title"}
                         type="text"
                         maxLength="60"
-                        component={"input"}
+                        component={NewsCreationInputForm}
                         placeholder={"Название"}
                         validate={[required, maxLengthTitle]}
                     />
@@ -52,7 +70,7 @@ const NewsForm = (props) => {
                         name={"source"}
                         type="text"
                         maxLength="30"
-                        component={"input"}
+                        component={NewsCreationInputForm}
                         placeholder={"Источник"}
                         validate={[required, maxLengthSource]}
                     />
@@ -70,8 +88,7 @@ const NewsForm = (props) => {
                     <Field
                         name={"tags"}
                         type="text"
-                        maxLength="30"
-                        component={"input"}
+                        component={NewsCreationInputForm}
                         placeholder={"Тэги"}
                         validate={[required]}
                         onChange={tagsFunction}
@@ -91,7 +108,7 @@ const NewsForm = (props) => {
                 <Field
                     name={"coverImage"}
                     type="text"
-                    component={"input"}
+                    component={NewsCreationInputForm}
                     placeholder={"Вставьте ссылку на картинку"}
                     validate={[required]}
                 />

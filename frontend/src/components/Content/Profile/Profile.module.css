@@ -30,6 +30,18 @@
 .wrapper .userBlock div h3:hover {
   filter: brightness(0.8);
 }
+.wrapper #creationBtn {
+  margin-top: 20px;
+  padding: 5px 10px;
+  background: #a2fa67;
+  color: black;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: 0.2s;
+}
+.wrapper #creationBtn:hover {
+  filter: brightness(0.8);
+}
 .wrapper .newsBlock {
   display: flex;
   flex-direction: column;

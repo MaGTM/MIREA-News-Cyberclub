@@ -44,29 +44,56 @@
     },
     {
       "id": 4,
-      "source": "Allah",
+      "source": "allah",
       "tags": [
-        "niggers",
-        "milf"
+        "dgdf"
       ],
       "author": "admin",
-      "title": "How much money do niggers make when they're fucking with mifls",
-      "description": "Incredible news for everyone who wants to be a fucking nigger and who loves milfs",
-      "coverImage": "https://bugaga.ru/uploads/posts/2017-03/1489052030_kotik-hosiko-12.jpg",
-      "publishedAt": "2021-10-16",
-      "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+      "title": "allah",
+      "description": "dfgdf",
+      "coverImage": "https://2peso.ru/wp-content/uploads/2019/09/ris-3-1068x1068.jpg",
+      "publishedAt": "2021-10-17",
+      "content": "dfgdfgd"
+    },
+    {
+      "id": 5,
+      "source": "dfsfghfgd",
+      "tags": [
+        "dfghdfg"
+      ],
+      "author": "admin",
+      "title": "gdfg",
+      "description": "hdfghdfgh",
+      "coverImage": "https://2peso.ru/wp-content/uploads/2019/09/ris-3-1068x1068.jpg",
+      "publishedAt": "2021-10-17",
+      "content": "dfghdfghgdf"
+    },
+    {
+      "id": 6,
+      "source": "sdfhsgf",
+      "tags": [
+        "dfghdfghdf"
+      ],
+      "author": "admin",
+      "title": "AAEhskfs",
+      "description": "gfdhdfgh",
+      "coverImage": "https://2peso.ru/wp-content/uploads/2019/09/ris-3-1068x1068.jpg",
+      "publishedAt": "2021-10-17",
+      "content": "dfghdfgh"
     }
   ],
   "users": [
     {
       "id": 1,
       "login": "admin",
-      "password": "pa$$word",
+      "password": "password",
       "newsBlocksId": [
         1,
         2,
         3,
-        4
+        4,
+        5,
+        6
       ]
     },
     {

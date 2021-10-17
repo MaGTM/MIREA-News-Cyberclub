@@ -28,6 +28,21 @@
          }
       }
     }
+
+
+  }
+
+  #creationBtn {
+    margin-top: 20px;
+    padding: 5px 10px;
+    background: #a2fa67;
+    color: black;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: 0.2s;
+    &:hover {
+      filter: brightness(0.8);
+    }
   }
 
   .newsBlock {

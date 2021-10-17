@@ -11,6 +11,9 @@ export const newsAPI = {
             .then((res) => {
                 return res.data
             })
+            .catch((e) => {
+                return e.response.data
+            })
     },
     getProfileNews(newsId, token) {
         return instance

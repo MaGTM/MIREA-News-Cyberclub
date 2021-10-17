@@ -10,6 +10,7 @@ import {logoutUser} from "../../../redux/auth";
 class ProfileContainer extends React.Component {
     componentDidMount() {
         this.props.getUserData(this.props.userId)
+        this.props.getUserNewsData(this.props.newsBlocksId, this.props.token)
     }
 
     componentDidUpdate() {
