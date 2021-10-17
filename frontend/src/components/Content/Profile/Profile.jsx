@@ -10,13 +10,18 @@ const Profile = (props) => {
             return <NavLink to={`/profile/news/${i.id}`}><ProfileNewsItem title={i.title}/></NavLink>
         })
     }
+
+    let logoutUser = () => {
+        props.logoutUser()
+        props.resetData()
+    }
     return (
         <div className={s.wrapper}>
             <div className={s.userBlock}>
                 <img src={avatar} alt={props.login}/>
                 <div>
                     <h2>{props.login}</h2>
-                    <h3 onClick={props.logoutUser}>Выйти</h3>
+                    <h3 onClick={logoutUser}>Выйти</h3>
                 </div>
             </div>
             <NavLink to={'/profile/creation'} id={s.creationBtn}>Новая новость</NavLink>

@@ -23,6 +23,13 @@
   flex-direction: column;
   align-items: center;
 }
+.wrapper .form_wrapper form .errorAuth {
+  background: #fa6767;
+  padding: 5px 10px;
+  color: white;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
 .wrapper .form_wrapper form button {
   border: 0;
   background: #196BB1;

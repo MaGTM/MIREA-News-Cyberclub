@@ -11,7 +11,7 @@ class HomeContainer extends React.Component {
     }
 
     componentDidMount() {
-        document.title = "Новостной Сайт"
+        document.title = "Новости - МИРЭА"
     }
 
     render() {

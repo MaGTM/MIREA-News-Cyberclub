@@ -1,6 +1,6 @@
 import Profile from "./Profile"
 import React from "react"
-import {getUserData, getUserNewsData} from "../../../redux/profile"
+import {getUserData, getUserNewsData, resetData} from "../../../redux/profile"
 import {connect} from "react-redux"
 import { withAuthRedirect } from "../../common/hoc/withAuthRedirect"
 import Loading from "../../common/Loading/Loading";
@@ -39,4 +39,4 @@ let mstp = (state) => {
     }
 }
 
-export default connect(mstp, {getUserData, getUserNewsData, logoutUser})(withAuthRedirect(ProfileContainer))
+export default connect(mstp, {getUserData, getUserNewsData, logoutUser, resetData})(withAuthRedirect(ProfileContainer))

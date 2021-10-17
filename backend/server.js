@@ -62,6 +62,10 @@ server.post('/login', (req, res) => {
       });
     }
   });
+
+  res.json({
+    message: 'Something went wrong, try again',
+  })
 });
 
 // Registration

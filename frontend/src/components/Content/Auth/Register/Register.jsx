@@ -1,6 +1,6 @@
 import React from "react";
 import s from "./Register.module.css"
-import {Field, formValueSelector, reduxForm} from "redux-form";
+import {Field, reduxForm} from "redux-form";
 import {isMatch, maxLengthUser, minLengthPassword, minLengthUser, required} from "../../../../utils/formValidators";
 import inputForm from "../../../common/forms/inputForm";
 import {Redirect} from "react-router-dom";

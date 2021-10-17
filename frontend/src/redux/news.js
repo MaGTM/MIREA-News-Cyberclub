@@ -2,10 +2,12 @@ import {newsAPI} from "../api/api"
 
 const IS_LOADING = "IS_LOADING"
 const SET_ITEMS = "SET_ITEMS"
+const SET_ARTICLE = "SET_ARTICLE"
 
 let initialState = {
     isLoading: true,
-    items: []
+    items: [],
+    article: {}
 }
 
 let news= (state = initialState, action) => {
@@ -29,6 +31,11 @@ let news= (state = initialState, action) => {
                 ...state,
                 items
             }
+        case SET_ARTICLE:
+            return {
+                ...state,
+                article: action.item
+            }
         default:
             return state
     }
@@ -37,6 +44,7 @@ let news= (state = initialState, action) => {
 // Action creators
 const isLoading = (loading) => ({type: IS_LOADING, loading})
 const setItems = (items) => ({type: SET_ITEMS, items})
+const setArticle = (item) => ({type: SET_ARTICLE, item})
 
 // Thunks
 export const getNews = () => {
@@ -46,6 +54,18 @@ export const getNews = () => {
             .then((res) => {
                 dispatch(isLoading(false))
                 dispatch(setItems(res))
+                return res
+            })
+    }
+}
+
+export const getCurrentArticle = (id) => {
+    return (dispatch) => {
+        dispatch(isLoading(true))
+        newsAPI.getArticle(id)
+            .then((res) => {
+                dispatch(isLoading(false))
+                dispatch(setArticle(res))
                 return res
             })
     }

@@ -28,18 +28,6 @@ let Login = (props) => {
 }
 
 let LoginForm = (props) => {
-    let jsxResult
-    switch (props.result) {
-        case "User does not exists":
-            jsxResult = <span className={s.auth + ' ' + s.errorAuth}>{props.result}</span>
-            break
-        case "Username or Password is incorrect":
-            jsxResult = <span className={s.auth + ' ' + s.errorAuth}>{props.result}</span>
-            break
-        case "User authenticated":
-            props.setResult(null)
-            break
-    }
 
     if (props.token) return <Redirect to={"/"}/>
 
@@ -59,7 +47,7 @@ let LoginForm = (props) => {
                     validate={[required]}
                     component={inputForm}/>
             </div>
-            {jsxResult}
+            {props.result && <span className={s.errorAuth}>{props.result}</span>}
             <button>Войти</button>
         </form>
     )

@@ -19,7 +19,6 @@ const Home = (props) => {
         <div className={s.wrapper}>
             <div className={s.filters}>
                 <input type="text" placeholder={"Поиск"}/>
-                <p>Выбрать месяц</p>
             </div>
             <div className={s.mainContent} style={{height: height}}>
                 {itemsArray}

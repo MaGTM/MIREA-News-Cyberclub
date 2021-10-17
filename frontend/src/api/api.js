@@ -29,6 +29,13 @@ export const newsAPI = {
             .then((res) => {
                 return res.data
             })
+    },
+    getArticle(id) {
+        return instance
+            .get(`/articles/${id}`)
+            .then((res) => {
+                return res.data
+            })
     }
 }
 

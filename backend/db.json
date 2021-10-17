@@ -2,84 +2,59 @@
   "articles": [
     {
       "id": 1,
-      "source": "newsBTC",
+      "source": "https://www.lipsum.com/feed/ht",
       "tags": [
-        "business",
-        "bitcoin"
+        "Lorem_Ipsum",
+        "text",
+        "generator",
+        ""
       ],
       "author": "admin",
-      "title": "Bitcoin Sets New All-Time High at $49,400",
-      "description": "Bitcoin just rocketed to a new all-time high at $49,400 despite consolidation in the price of Ethereum. The leading cryptocurrency set this new high after spending most of the past week in the $47,000 range. Bitcoin is moving higher on continued institutional…",
-      "coverImage": "https://www.newsbtc.com/wp-content/uploads/2021/02/ken-cheung-10py7Mvmf1g-unsplash.jpg",
-      "publishedAt": "2021-02-14T07:58:16Z",
-      "content": "Bitcoin just rocketed to a new all-time high at $49,400 despite consolidation in the price of Ethereum. The leading cryptocurrency set this new high after spending most of the past week in the $47,00… [+2028 chars]"
+      "title": "Lorem Ipsum",
+      "description": "Lorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem Ipsum",
+      "coverImage": "https://2peso.ru/wp-content/uploads/2019/09/ris-3-1068x1068.jpg",
+      "publishedAt": "2021-10-17",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eleifend quam et nulla ornare porta vel quis diam. Donec vestibulum, ante vel lobortis pretium, nulla orci tincidunt arcu, ut commodo sem metus eu dui. Morbi finibus ipsum at augue consectetur pharetra. Morbi et scelerisque ex, id commodo nulla. Vestibulum eu justo eu enim mollis hendrerit eu id nisi. Aenean blandit augue non orci luctus hendrerit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aenean quis lectus eu nunc vehicula venenatis. Nunc et purus eleifend, viverra tellus vel, accumsan mi. Suspendisse potenti. Curabitur scelerisque, nunc vitae eleifend interdum, massa sapien iaculis mi, eget maximus urna arcu bibendum justo. Mauris rhoncus tellus metus, eget fringilla diam efficitur at. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent gravida bibendum nunc ut vehicula.\n\nIn sollicitudin maximus risus in suscipit. Integer id nulla interdum, dictum augue nec, ornare lectus. Etiam congue sapien sit amet est viverra, in mollis mauris vestibulum. Etiam at massa sit amet ex hendrerit congue efficitur at urna. Suspendisse neque diam, rutrum a lobortis eu, porta sed turpis. Nam eu sodales leo, vitae consectetur mauris. Cras vitae sem turpis. Praesent scelerisque eros id sapien congue euismod. Aliquam volutpat, felis vel hendrerit suscipit, enim ante sollicitudin arcu, et commodo lorem lorem in tortor. Sed aliquet porta ornare. Ut purus sapien, blandit et sodales id, vestibulum sit amet dui. Suspendisse odio nisi, cursus vel erat at, sagittis tincidunt purus.\n\nCurabitur volutpat, elit quis blandit vehicula, dolor ligula faucibus lectus, ac dapibus ipsum sem non ipsum. Sed sollicitudin blandit condimentum. In semper hendrerit commodo. Duis vel fermentum mi, et dapibus lacus. Duis accumsan eros ac tincidunt lobortis. Integer facilisis eros diam, vel pellentesque arcu interdum sit amet. Quisque porttitor, nisl eu accumsan aliquam, ex lectus lobortis metus, non vulputate sem neque a orci. Praesent suscipit mollis enim, eu rhoncus orci volutpat ut. Fusce turpis neque, rutrum vel dolor eu, efficitur ultrices ex.\n\nMaecenas rutrum venenatis justo in elementum. Fusce efficitur vitae neque non pretium. Etiam accumsan nec leo sollicitudin gravida. Nam ac faucibus orci, ac accumsan dui. Phasellus fermentum id velit quis scelerisque. Sed in sem hendrerit, convallis lectus non, porta magna. Mauris ut leo vel ligula sagittis ultrices. Pellentesque venenatis ex a nisl ultrices, eget finibus enim vulputate. Curabitur sem metus, suscipit at fringilla eget, sagittis sit amet nisl. Sed vel est magna. Aliquam sit amet consectetur ligula. Maecenas euismod mi ante, vitae fermentum erat pellentesque eget. In nec bibendum augue. Praesent in efficitur dolor.\n\nDonec ipsum lectus, lacinia non porta quis, venenatis rhoncus mi. Etiam elementum tortor at ligula ullamcorper, a congue eros vestibulum. In enim eros, dapibus quis risus sit amet, sodales faucibus lectus. Maecenas tristique blandit leo ac vehicula. Ut bibendum lacus ac lectus vestibulum, non euismod odio fermentum. Nam dictum sit amet tortor nec volutpat. Vestibulum in rhoncus odio, at ornare nisi. Donec ultrices pretium erat vitae aliquam. Nunc quis velit ut augue rhoncus ornare. In hac habitasse platea dictumst.\n\nNunc sed pulvinar dui, ut mattis nibh. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi a bibendum tortor. Donec ex tortor, blandit nec orci et, tristique cursus lorem. Suspendisse placerat tortor id tristique pellentesque. Suspendisse porta, lectus in scelerisque fermentum, quam elit tincidunt augue, eu tincidunt tellus risus non enim. Ut ligula eros, fermentum sed leo et, facilisis faucibus nisl.\n\nQuisque nec augue ac libero elementum porttitor. Sed volutpat iaculis pharetra. Pellentesque pellentesque velit et quam vestibulum lacinia. Etiam finibus luctus lorem. In tortor libero, porttitor vitae lectus quis, congue sagittis erat. Praesent eleifend dapibus mollis. Nullam ut purus libero. Praesent vestibulum orci vitae nunc bibendum pharetra quis vel lorem. Duis finibus justo non molestie mollis. Maecenas et erat velit.\n\nPraesent tincidunt eget mauris ut rhoncus. Aenean vitae purus a ante rhoncus sagittis. Sed maximus condimentum mauris eu fringilla. Pellentesque nec risus elit. Duis in ex ut dolor auctor tincidunt a non tortor. Phasellus vel neque rhoncus, tincidunt metus eu, rhoncus arcu. Morbi sollicitudin fringilla mauris eget imperdiet. Nullam non erat justo. Nam magna ligula, euismod eu ipsum a, rutrum pharetra velit. Aenean ac pellentesque purus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed diam arcu, sodales eu lobortis et, interdum vulputate metus. Aliquam non scelerisque nulla, at ultrices eros.\n\nMorbi euismod eu massa lobortis hendrerit. Mauris blandit at libero ut eleifend. Aenean commodo erat a est sollicitudin dapibus. Suspendisse rutrum eros sit amet est posuere, ut egestas nunc iaculis. Proin in felis quis est gravida bibendum. Proin cursus eros ut ante volutpat pellentesque. Aliquam erat volutpat.\n\nCurabitur maximus suscipit euismod. Fusce sodales purus non arcu lacinia feugiat. Sed fringilla quis mauris eget rhoncus. Vestibulum mollis vehicula enim, quis pharetra velit rhoncus a. Phasellus feugiat condimentum eros, non imperdiet ante porta non. Sed velit neque, faucibus sed nulla sed, luctus fringilla dui. Donec quis tristique velit. Sed congue finibus scelerisque. Ut at enim a lacus pharetra ultrices. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nam malesuada enim id placerat ornare. Sed non magna enim. Maecenas risus nisl, feugiat ac imperdiet feugiat, pretium in mi. In efficitur lectus et mauris fermentum porttitor facilisis vel ligula. Pellentesque sed nulla vel lacus auctor consectetur."
     },
     {
       "id": 2,
-      "source": "newsBTC",
+      "source": "cybersport.ru",
       "tags": [
-        "business",
-        "bitcoin"
+        "Spirit",
+        "dota"
       ],
       "author": "admin",
-      "title": "Bitcoin Sets New All-Time High at $49,400",
-      "description": "Bitcoin just rocketed to a new all-time high at $49,400 despite consolidation in the price of Ethereum. The leading cryptocurrency set this new high after spending most of the past week in the $47,000 range. Bitcoin is moving higher on continued institutional…",
-      "coverImage": "https://www.newsbtc.com/wp-content/uploads/2021/02/ken-cheung-10py7Mvmf1g-unsplash.jpg",
-      "publishedAt": "2021-02-14T07:58:16Z",
-      "content": "Bitcoin just rocketed to a new all-time high at $49,400 despite consolidation in the price of Ethereum. The leading cryptocurrency set this new high after spending most of the past week in the $47,00… [+2028 chars]"
+      "title": "Сборная России по футболу поздравила Team Spirit с победой н",
+      "description": "Сборная России по футболу отметила победу Team Spirit на The International 10 (2021) по Dota 2.",
+      "coverImage": "https://i.ytimg.com/vi/eFXHxy8wpB0/maxresdefault.jpg",
+      "publishedAt": "2021-10-17",
+      "content": "Сборная России по футболу отметила победу Team Spirit на The International 10 (2021) по Dota 2. Сообщение опубликовано в официальном твиттере.\n\nПредставители сборной разместили фотографию команды Ярослава Miposhka Найдёнова. Игроков клуба «переодели» в футболки российской команды по футболу с помощью графического редактора. \n\nThe International 2021 прошел с 7 по 17 октября в Бухаресте, Румыния. 18 команд разыграли призовой фонд в размере более $40 млн. В гранд-финале Team Spirit обыграла PSG.LGD со счетом 3:2 и заработала $18,2 млн. Ранее на стриме показали эмоции игроков после победы в чемпионате мира по Dota 2."
     },
     {
       "id": 3,
-      "source": "newsBTC",
+      "source": "ывапыва",
       "tags": [
-        "business",
-        "bitcoin"
+        "ывапывап"
       ],
       "author": "admin",
-      "title": "Bitcoin Sets New All-Time High at $49,400",
-      "description": "Bitcoin just rocketed to a new all-time high at $49,400 despite consolidation in the price of Ethereum. The leading cryptocurrency set this new high after spending most of the past week in the $47,000 range. Bitcoin is moving higher on continued institutional…",
-      "coverImage": "https://www.newsbtc.com/wp-content/uploads/2021/02/ken-cheung-10py7Mvmf1g-unsplash.jpg",
-      "publishedAt": "2021-02-14T07:58:16Z",
-      "content": "Bitcoin just rocketed to a new all-time high at $49,400 despite consolidation in the price of Ethereum. The leading cryptocurrency set this new high after spending most of the past week in the $47,00… [+2028 chars]"
+      "title": "вапывап",
+      "description": "выапыва",
+      "coverImage": "https://i.ytimg.com/vi/eFXHxy8wpB0/maxresdefault.jpg",
+      "publishedAt": "2021-10-18",
+      "content": "ывапывап"
     },
     {
       "id": 4,
-      "source": "allah",
+      "source": "SuperSource",
       "tags": [
-        "dgdf"
+        "sdfsdfsd"
       ],
-      "author": "admin",
-      "title": "allah",
-      "description": "dfgdf",
-      "coverImage": "https://2peso.ru/wp-content/uploads/2019/09/ris-3-1068x1068.jpg",
-      "publishedAt": "2021-10-17",
-      "content": "dfgdfgd"
-    },
-    {
-      "id": 5,
-      "source": "dfsfghfgd",
-      "tags": [
-        "dfghdfg"
-      ],
-      "author": "admin",
-      "title": "gdfg",
-      "description": "hdfghdfgh",
-      "coverImage": "https://2peso.ru/wp-content/uploads/2019/09/ris-3-1068x1068.jpg",
-      "publishedAt": "2021-10-17",
-      "content": "dfghdfghgdf"
-    },
-    {
-      "id": 6,
-      "source": "sdfhsgf",
-      "tags": [
-        "dfghdfghdf"
-      ],
-      "author": "admin",
-      "title": "AAEhskfs",
-      "description": "gfdhdfgh",
-      "coverImage": "https://2peso.ru/wp-content/uploads/2019/09/ris-3-1068x1068.jpg",
-      "publishedAt": "2021-10-17",
-      "content": "dfghdfgh"
+      "author": "parker",
+      "title": "Incredible title",
+      "description": "sdfsd",
+      "coverImage": "https://i.ytimg.com/vi/eFXHxy8wpB0/maxresdefault.jpg",
+      "publishedAt": "2021-10-18",
+      "content": "dfggggdfgdf"
     }
   ],
   "users": [
@@ -90,22 +65,19 @@
       "newsBlocksId": [
         1,
         2,
-        3,
-        4,
-        5,
-        6
+        3
       ]
     },
     {
       "id": 2,
       "login": "parker",
       "password": "root666",
-      "newsBlocksId": []
+      "newsBlocksId": [
+        4
+      ]
     }
   ],
   "tokens": [
-    "X1ktbVgjprZvnyLYVPLq1ToMrNydIxCgej9wuHUEaVWFQei6KRr7UFHl1okyIZDNik0zrdNZkFWo6ogozk3OMEU9DQCJRtsz9a6e",
-    "gLpwazGhiCOlk5yc8MSZZZzf65ASYnkolW0XWkMOOxkiQV0i2pkFwg8qSUuxnpfBRqX0sPRX440uCCStNlUMFmEXLZPRsZYfgX0n",
-    "DScjarPclkMJfpkY7XkS50tIehPGrbxDUe8A1GpsiR1PsPzZMzQJgUaq4NLA2Y2xZCZ7HSGAf2RJNaBfrPRaDsWHkoVmQ0CKyTyb"
+    "BOxOIGsKriPHOXS90UBUNEEhfS2TGVE9NV5cxCXJmxpj2XhGLCo1vlS6IzsAX6RofgOCB7WEXWPQBFRKpyG2f2nPPxF8BwaoDxC5"
   ]
 }

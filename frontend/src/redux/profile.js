@@ -5,6 +5,7 @@ const IS_LOADING_PROFILE = "IS_LOADING_PROFILE"
 const GET_USER_DATA_PROFILE = "GET_USER_DATA_PROFILE"
 const SET_NEWS_BLOCKS_PROFILE = "SET_NEWS_BLOCKS_PROFILE"
 const IS_ARTICLE_CREATED = "IS_ARTICLE_CREATED"
+const RESET_USER_DATA = "RESET_USER_DATA"
 
 // State and reducer
 let initialState = {
@@ -38,6 +39,15 @@ let profile = (state = initialState, action) => {
                 ...state,
                 isCreated: action.isCreated
             }
+        case RESET_USER_DATA:
+            return {
+                ...state,
+                login: null,
+                newsBlocksId: null,
+                isLoading: false,
+                newsBlocks: null,
+                isCreated: null,
+            }
         default:
             return state
     }
@@ -48,6 +58,7 @@ let setUserDataProfile = (login, newsBlocksId) => ({ type: GET_USER_DATA_PROFILE
 let setNewsBlocksProfile = (newsBlocks) => ({ type: SET_NEWS_BLOCKS_PROFILE, newsBlocks })
 let isArticleCreated = (isCreated) => ({type: IS_ARTICLE_CREATED, isCreated})
 let isLoading = (loading) => ({ type: IS_LOADING_PROFILE, loading })
+let resetUserData = () => ({ type: RESET_USER_DATA })
 
 // Thunks
 export const getUserData = (userId) => {
@@ -86,6 +97,12 @@ export const createNewArticle = (data, token) => {
 export const isCreated = () => {
     return (dispatch) => {
         dispatch(isArticleCreated(false))
+    }
+}
+
+export const resetData = () => {
+    return (dispatch) => {
+        dispatch(resetUserData())
     }
 }
 

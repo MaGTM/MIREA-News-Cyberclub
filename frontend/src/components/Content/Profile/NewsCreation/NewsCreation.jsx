@@ -8,8 +8,8 @@ import Loading from "../../../common/Loading/Loading";
 import NewsCreationTextareaForm from "../../../common/forms/newsCreationTextareaForm";
 
 const maxLengthTitle = maxLengthUser(60)
-const maxLengthDescription = maxLengthUser(127)
-const maxLengthSource = maxLengthUser(30)
+const maxLengthDescription = maxLengthUser(500)
+const maxLengthSource = maxLengthUser(60)
 
 let NewsCreation = (props) => {
     let submitForm = (values) => {
@@ -103,7 +103,7 @@ const NewsForm = (props) => {
                     rows="20"
                     placeholder="Полный текст"
                     component={NewsCreationTextareaForm}
-                    validate={[required, maxLengthDescription]}
+                    validate={[required]}
                 />
                 <Field
                     name={"coverImage"}

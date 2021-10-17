@@ -59,13 +59,12 @@ export const loginUser = (data) => {
         dispatch(isLoading(true))
         authAPI.loginUser(data)
             .then((res) => {
-                if(res.status === 400) {
+                if(res.message === "Something went wrong, try again") {
                     dispatch(isLoading(false))
                     dispatch(setResult(res.message))
                     return
                 }
                 dispatch(isLoading(false))
-                dispatch(setResult(res.message))
                 dispatch(setUserData(res.userId, res.token, true))
                 localStorage.setItem('token', res.token)
                 localStorage.setItem('userId', res.userId)
