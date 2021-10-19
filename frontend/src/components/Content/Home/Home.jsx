@@ -1,10 +1,12 @@
 import React from 'react';
 import s from './Home.module.css'
 import {useState} from "react";
-import {NavLink} from "react-router-dom";
+import {NavLink, Redirect} from "react-router-dom";
 import Loading from "../../common/Loading/Loading";
 
 const Home = (props) => {
+    let currentPage =  Number(props.match.params.page)
+
 
     if (props.loading) {
         return <Loading/>
@@ -13,17 +15,10 @@ const Home = (props) => {
     let itemsArray = props.items.map((i) => {
         return <NavLink to={`/news/${i.id}`}><NewsItem title={i.title} coverImage = {i.coverImage} description = {i.description}/></NavLink>
     })
-    let currentPage
-    if(props.match.params.page) {
-        currentPage = Number(props.match.params.page)
-    } else {
-        currentPage = 1
-    }
-
     let pagesArray = []
 
     for(let i = 1; i <= Math.ceil(props.length/12); i++) {
-        pagesArray.push(<NavLink to={`/${i}`} className={s.pagesLink} activeClassName={s.active}>{i}</NavLink>)
+        pagesArray.push(<NavLink to={`/articles/${i}`} className={s.pagesLink} activeClassName={s.active}>{i}</NavLink>)
     }
 
     let start = () => {
@@ -53,9 +48,6 @@ const Home = (props) => {
     let height = Math.ceil(itemsArray.length/4)*397.5
     return (
         <div className={s.wrapper}>
-            <div className={s.filters}>
-                <input type="text" placeholder={"Поиск"}/>
-            </div>
             <div className={s.mainContent} style={{height: height}}>
                 {itemsArray}
             </div>

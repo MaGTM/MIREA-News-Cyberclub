@@ -18,6 +18,7 @@ class HomeContainer extends React.Component {
 
     componentDidMount() {
         document.title = "Новости - МИРЭА"
+        console.log('hi')
     }
 
     componentDidUpdate(prevProps, prevState, snapshot) {
