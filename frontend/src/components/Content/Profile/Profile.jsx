@@ -7,7 +7,7 @@ const Profile = (props) => {
     let itemsArray
     if(props.newsBlocks !== null) {
         itemsArray = props.newsBlocks.map((i) => {
-            return <NavLink to={`/profile/news/${i.id}`}><ProfileNewsItem title={i.title}/></NavLink>
+            return <NavLink to={`/news/${i.id}`}><ProfileNewsItem title={i.title}/></NavLink>
         })
     }
 

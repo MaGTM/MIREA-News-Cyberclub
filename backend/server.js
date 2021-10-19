@@ -119,7 +119,7 @@ server.post('/create', (req, res) => {
   const offset = yourDate.getTimezoneOffset()
   yourDate = new Date(yourDate.getTime() - (offset * 60 * 1000))
 
-  router.db.get('articles').push({
+  router.db.get('articles').unshift({
     id: router.db.get('articles').value().length + 1,
     source: data.source,
     tags: data.tags,

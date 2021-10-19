@@ -8,6 +8,7 @@ import RegisterContainer from "./components/Content/Auth/Register/RegisterContai
 import ProfileContainer from "./components/Content/Profile/ProfileContainer";
 import NewsCreationContainer from "./components/Content/Profile/NewsCreation/NewsCreationContainer";
 import ArticleContainer from "./components/Content/Home/Article/ArticleContainer";
+import NewsContainer from "./components/Content/Profile/News/NewsContainer";
 
 
 const App = (props) => {
@@ -22,7 +23,7 @@ const App = (props) => {
                     <Route path={"/login"} component={LoginContainer}/>
                     <Route path={"/register"} component={RegisterContainer}/>
                     <Route exact path={"/profile"} component={ProfileContainer}/>
-                    {/*<Route path={"/profile/news/:id"} component={NewsContainer}/>*/}
+                    <Route path={"/profile/news/:id"} component={NewsContainer}/>
                     <Route path={"/profile/creation"} component={NewsCreationContainer}/>
                 </div>
             </div>

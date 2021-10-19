@@ -1,6 +1,19 @@
 {
   "articles": [
     {
+      "id": 159,
+      "source": "SuperSource",
+      "tags": [
+        "dfgdf"
+      ],
+      "author": "IncredibleTitts",
+      "title": "Lorem Ipsum",
+      "description": "dfgdf",
+      "coverImage": "https://2peso.ru/wp-content/uploads/2019/09/ris-3-1068x1068.jpg",
+      "publishedAt": "2021-10-19",
+      "content": "dfgdfg"
+    },
+    {
       "id": 1,
       "source": "https://www.lipsum.com/feed/ht",
       "tags": [
@@ -2043,6 +2056,19 @@
       "coverImage": "https://i.ytimg.com/vi/eFXHxy8wpB0/maxresdefault.jpg",
       "publishedAt": "2021-10-19",
       "content": "ывапывап"
+    },
+    {
+      "id": 158,
+      "source": "SuperSource",
+      "tags": [
+        "dfgd"
+      ],
+      "author": "IncredibleTitts",
+      "title": "Incredible title",
+      "description": "fg",
+      "coverImage": "https://www.logolynx.com/images/logolynx/96/96505f6ec10a655837d10bfb8083095c.jpeg",
+      "publishedAt": "2021-10-19",
+      "content": "dfgdf"
     }
   ],
   "users": [
@@ -2215,10 +2241,20 @@
       "newsBlocksId": [
         4
       ]
+    },
+    {
+      "id": 3,
+      "login": "IncredibleTitts",
+      "password": "05122003",
+      "newsBlocksId": [
+        158,
+        159
+      ]
     }
   ],
   "tokens": [
     "BOxOIGsKriPHOXS90UBUNEEhfS2TGVE9NV5cxCXJmxpj2XhGLCo1vlS6IzsAX6RofgOCB7WEXWPQBFRKpyG2f2nPPxF8BwaoDxC5",
-    "RCb8KI9GjxW2wJPKtPlSg8VmioLh3TtzVZJhWgnhdm9pqFwCPFyQ3G9G7kf0FxcuGg1JEQLi2Zq2mstWW1y5sgWHsAJWxexPYCw8"
+    "RCb8KI9GjxW2wJPKtPlSg8VmioLh3TtzVZJhWgnhdm9pqFwCPFyQ3G9G7kf0FxcuGg1JEQLi2Zq2mstWW1y5sgWHsAJWxexPYCw8",
+    "6QYRLSBrsAqOfbhtYdPBTQ8SDThuwHE3SIrA8N3JhSxgiZhRWzrTfJ40s7anexLGPgiazjwG17u4jV1dbOPFNebdXX93KTmX0Kbd"
   ]
 }
