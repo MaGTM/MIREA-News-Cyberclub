@@ -30,7 +30,7 @@
   margin-bottom: 50px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   gap: 30px 40px;
   grid-template-areas: ". . . ." ". . . ." ". . . .";
 }
@@ -98,6 +98,33 @@
   background: #196BB1;
   color: white;
   border-radius: 5px;
+}
+
+@media screen and (max-width: 1770px) {
+  .wrapper .mainContent {
+    gap: 30px 20px;
+  }
+}
+@media screen and (max-width: 1570px) {
+  .wrapper .mainContent {
+    gap: 30px 110px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: ". . ." ". . ." ". . ." ". . .";
+  }
+}
+@media screen and (max-width: 1320px) {
+  .wrapper .mainContent {
+    gap: 30px 10px;
+  }
+}
+@media screen and (max-width: 1120px) {
+  .wrapper .mainContent {
+    gap: 30px 175px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: ". ." ". ." ". ." ". ." ". ." ". .";
+  }
 }
 
 /*# sourceMappingURL=Home.module.css.map */

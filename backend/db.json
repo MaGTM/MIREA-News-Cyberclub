@@ -1,6 +1,19 @@
 {
   "articles": [
     {
+      "id": 4,
+      "source": "ывапыва",
+      "tags": [
+        "ывапывап"
+      ],
+      "author": "admin",
+      "title": "вапывап",
+      "description": "выапыва",
+      "coverImage": "https://i.ytimg.com/vi/eFXHxy8wpB0/maxresdefault.jpg",
+      "publishedAt": "2021-10-19",
+      "content": "ывапывап"
+    },
+    {
       "id": 1,
       "source": "https://www.lipsum.com/feed/ht",
       "tags": [
@@ -52,7 +65,8 @@
       "newsBlocksId": [
         1,
         2,
-        3
+        3,
+        4
       ]
     },
     {

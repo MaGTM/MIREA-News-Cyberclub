@@ -44,8 +44,15 @@ const Home = (props) => {
             }
         }
     }
+    console.log(window.innerWidth)
+    let height
 
-    let height = Math.ceil(itemsArray.length/4)*397.5
+    if(window.innerWidth >= 1570) {
+        height = Math.ceil(itemsArray.length/4)*397.5
+    }
+    else if (window.innerWidth >= 1310){
+        height = Math.ceil(itemsArray.length/3)*397.5
+    }
     return (
         <div className={s.wrapper}>
             <div className={s.mainContent} style={{height: height}}>
