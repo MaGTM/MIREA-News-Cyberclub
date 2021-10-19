@@ -141,6 +141,14 @@ server.post('/create', (req, res) => {
   })
 })
 
+// Количество статей
+server.get('/getlength', (req, res) => {
+  res.json({
+    message: "Successful",
+    length: router.db.get('articles').value().length
+  })
+})
+
 // Default json-server behaviour
 server.use(router);
 

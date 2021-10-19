@@ -13,6 +13,18 @@ const Home = (props) => {
     let itemsArray = props.items.map((i) => {
         return <NavLink to={`/news/${i.id}`}><NewsItem title={i.title} coverImage = {i.coverImage} description = {i.description}/></NavLink>
     })
+    let currentPage
+    if(props.match.params.page) {
+        currentPage = props.match.params.page
+    } else {
+        currentPage = 1
+    }
+
+    let pagesArray = []
+
+    for(let i = 1; i <= Math.ceil(props.length/12); i++) {
+        pagesArray.push(<NavLink to={`/${i}`} className={s.pagesLink} activeClassName={s.active}>{i}</NavLink>)
+    }
 
     let height = Math.ceil(itemsArray.length/4)*397.5
     return (
@@ -23,6 +35,7 @@ const Home = (props) => {
             <div className={s.mainContent} style={{height: height}}>
                 {itemsArray}
             </div>
+            <div className={s.pages}>{pagesArray.slice((currentPage-5 < 0 ? 0 : currentPage-5), (currentPage+5 > pagesArray.length ? pagesArray.length : currentPage+5))}</div>
         </div>
     )
 }

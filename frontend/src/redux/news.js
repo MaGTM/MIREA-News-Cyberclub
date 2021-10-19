@@ -3,11 +3,13 @@ import {newsAPI} from "../api/api"
 const IS_LOADING = "IS_LOADING"
 const SET_ITEMS = "SET_ITEMS"
 const SET_ARTICLE = "SET_ARTICLE"
+const SET_LENGTH = "SET_LENGTH"
 
 let initialState = {
     isLoading: true,
     items: [],
-    article: {}
+    article: {},
+    length: null
 }
 
 let news= (state = initialState, action) => {
@@ -36,6 +38,11 @@ let news= (state = initialState, action) => {
                 ...state,
                 article: action.item
             }
+        case SET_LENGTH:
+            return {
+                ...state,
+                length: action.length
+            }
         default:
             return state
     }
@@ -45,15 +52,16 @@ let news= (state = initialState, action) => {
 const isLoading = (loading) => ({type: IS_LOADING, loading})
 const setItems = (items) => ({type: SET_ITEMS, items})
 const setArticle = (item) => ({type: SET_ARTICLE, item})
+const setLength = (length) => ({type: SET_LENGTH, length})
 
 // Thunks
-export const getNews = () => {
+export const getNews = (page) => {
     return (dispatch) => {
         dispatch(isLoading(true))
-        newsAPI.getNews()
+        newsAPI.getNews(page)
             .then((res) => {
-                dispatch(isLoading(false))
                 dispatch(setItems(res))
+                dispatch(isLoading(false))
                 return res
             })
     }
@@ -64,8 +72,20 @@ export const getCurrentArticle = (id) => {
         dispatch(isLoading(true))
         newsAPI.getArticle(id)
             .then((res) => {
-                dispatch(isLoading(false))
                 dispatch(setArticle(res))
+                dispatch(isLoading(false))
+                return res
+            })
+    }
+}
+
+export const getCurrentLength = () => {
+    return (dispatch) => {
+        dispatch(isLoading(true))
+        newsAPI.getLength()
+            .then((res) => {
+                dispatch(setLength(res.length))
+                dispatch(isLoading(false))
                 return res
             })
     }

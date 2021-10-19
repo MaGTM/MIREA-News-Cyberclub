@@ -15,7 +15,7 @@ const App = (props) => {
             <div className={s.wrapper}>
                 <HeaderContainer/>
                 <div className={s.content}>
-                    <Route exact path={"/"} component={HomeContainer}/>
+                    <Route exact path={["/:page", "/"]} component={HomeContainer}/>
                     <Route exact path={"/news/:id"} component={ArticleContainer}/>
                     <Route path={"/login"} component={LoginContainer}/>
                     <Route path={"/register"} component={RegisterContainer}/>

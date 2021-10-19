@@ -39,7 +39,6 @@
     grid-template-areas:
     ". . . ."
     ". . . ."
-    ". . . ."
     ". . . .";
 
     a {
@@ -76,6 +75,10 @@
             left: 50%;
             transform: translate(-50%, -50%);
             width: 350px;
+            text-shadow: 1px 0 1px #000,
+            0 1px 1px #000,
+            -1px 0 1px #000,
+            0 -1px 1px #000;
           }
 
           p {
@@ -88,6 +91,28 @@
             width: 330px;
           }
         }
+      }
+    }
+  }
+
+  .pages {
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+
+    &Link {
+      color: black;
+      width: 30px;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &.active {
+        background: #196BB1;
+        color: white;
+        border-radius: 5px;
       }
     }
   }

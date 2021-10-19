@@ -5,9 +5,9 @@ const instance = axios.create({
 })
 
 export const newsAPI = {
-    getNews() {
+    getNews(page) {
         return instance
-            .get('/articles')
+            .get(`/articles?_page=${page}&_limit=12`)
             .then((res) => {
                 return res.data
             })
@@ -33,6 +33,13 @@ export const newsAPI = {
     getArticle(id) {
         return instance
             .get(`/articles/${id}`)
+            .then((res) => {
+                return res.data
+            })
+    },
+    getLength() {
+        return instance
+            .get(`/getlength`)
             .then((res) => {
                 return res.data
             })
