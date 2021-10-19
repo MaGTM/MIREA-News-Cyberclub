@@ -23,7 +23,6 @@ class HomeContainer extends React.Component {
     componentDidUpdate(prevProps, prevState, snapshot) {
         if(this.props.match.params.page !== prevProps.match.params.page) {
             if(this.props.match.params.page) {
-                console.log(this.props.match.params.page)
                 this.props.getNews(this.props.match.params.page)
             } else {
                 this.props.getNews(1)

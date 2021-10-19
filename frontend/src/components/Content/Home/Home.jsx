@@ -15,7 +15,7 @@ const Home = (props) => {
     })
     let currentPage
     if(props.match.params.page) {
-        currentPage = props.match.params.page
+        currentPage = Number(props.match.params.page)
     } else {
         currentPage = 1
     }
@@ -24,6 +24,30 @@ const Home = (props) => {
 
     for(let i = 1; i <= Math.ceil(props.length/12); i++) {
         pagesArray.push(<NavLink to={`/${i}`} className={s.pagesLink} activeClassName={s.active}>{i}</NavLink>)
+    }
+
+    let start = () => {
+        if(currentPage-5 < 0) {
+            return 0
+        } else {
+            if(currentPage+5 > pagesArray.length) {
+                return currentPage-5-((currentPage+5)-(pagesArray.length))
+            } else {
+                return currentPage-5
+            }
+        }
+    }
+
+    let end = () => {
+        if(currentPage+5 > pagesArray.length) {
+            return pagesArray.length
+        } else {
+            if(currentPage-5 < 0) {
+                return currentPage+5+(-(currentPage-5))
+            } else {
+                return currentPage+5
+            }
+        }
     }
 
     let height = Math.ceil(itemsArray.length/4)*397.5
@@ -35,7 +59,7 @@ const Home = (props) => {
             <div className={s.mainContent} style={{height: height}}>
                 {itemsArray}
             </div>
-            <div className={s.pages}>{pagesArray.slice((currentPage-5 < 0 ? 0 : currentPage-5), (currentPage+5 > pagesArray.length ? pagesArray.length : currentPage+5))}</div>
+            <div className={s.pages}>{pagesArray.slice(start(), end())}</div>
         </div>
     )
 }
