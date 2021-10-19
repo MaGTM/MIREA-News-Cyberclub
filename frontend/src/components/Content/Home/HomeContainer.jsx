@@ -9,7 +9,6 @@ class HomeContainer extends React.Component {
         super(props);
         this.props.getCurrentLength()
         if(this.props.match.params.page) {
-            console.log(this.props.match.params.page)
             this.props.getNews(this.props.match.params.page)
         } else {
             this.props.getNews(1)
@@ -18,7 +17,6 @@ class HomeContainer extends React.Component {
 
     componentDidMount() {
         document.title = "Новости - МИРЭА"
-        console.log('hi')
     }
 
     componentDidUpdate(prevProps, prevState, snapshot) {

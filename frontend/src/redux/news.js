@@ -60,6 +60,10 @@ export const getNews = (page) => {
         dispatch(isLoading(true))
         newsAPI.getNews(page)
             .then((res) => {
+                if(res === []) {
+                    dispatch(setItems(res))
+                    dispatch(isLoading(false))
+                }
                 dispatch(setItems(res))
                 dispatch(isLoading(false))
                 return res

@@ -82,7 +82,6 @@
   width: 330px;
 }
 .wrapper .pages {
-  width: 350px;
   display: flex;
   justify-content: space-between;
   margin-bottom: 50px;

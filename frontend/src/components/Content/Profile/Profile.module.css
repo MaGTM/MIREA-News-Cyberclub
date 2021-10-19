@@ -8,11 +8,12 @@
   display: flex;
   align-items: center;
   width: 200px;
-  justify-content: space-between;
+  flex-direction: column;
 }
 .wrapper .userBlock img {
   width: 100px;
   height: 100px;
+  margin-bottom: 10px;
 }
 .wrapper .userBlock div {
   display: flex;

@@ -51,7 +51,7 @@ const Home = (props) => {
             <div className={s.mainContent} style={{height: height}}>
                 {itemsArray}
             </div>
-            <div className={s.pages}>{pagesArray.slice(start(), end())}</div>
+            <div className={s.pages} style={pagesArray.length < 10 ? {width: 50 * pagesArray.length} : {width: "350px"}}>{pagesArray.slice(start(), end())}</div>
         </div>
     )
 }
