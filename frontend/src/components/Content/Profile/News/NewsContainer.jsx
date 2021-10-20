@@ -1,6 +1,6 @@
 import {connect} from "react-redux";
 import {withRouter} from "react-router-dom";
-import {withAuthRedirect} from "../../../common/hoc/withAuthRedirect";
+import {withNoAuthRedirect} from "../../../common/hoc/withNoAuthRedirect";
 import News from "./News";
 
 let mstp = (state) => {
@@ -9,4 +9,4 @@ let mstp = (state) => {
     }
 }
 
-export default connect(mstp, {})(withRouter(withAuthRedirect(News)))
+export default connect(mstp, {})(withRouter(withNoAuthRedirect(News)))

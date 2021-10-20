@@ -1,9 +1,9 @@
 import React from "react"
 import {Redirect} from "react-router-dom";
 
-export const withAuthRedirect = (Component) => {
+export const withNoAuthRedirect = (Component) => {
     return (props) => {
-        if (props.isAuthenticated) return <Redirect to={"/"}/>
+        if (!props.isAuthenticated) return <Redirect to={"/login"}/>
 
         return <Component {...props}/>
     }

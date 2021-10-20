@@ -5,6 +5,7 @@ import inputForm from "../../../common/forms/inputForm";
 import {required} from "../../../../utils/formValidators";
 import {Redirect} from "react-router-dom";
 import Loading from "../../../common/Loading/Loading";
+import {setResult} from "../../../../redux/auth";
 
 let Login = (props) => {
     document.title = "Авторизация - МИРЭА"
@@ -28,9 +29,6 @@ let Login = (props) => {
 }
 
 let LoginForm = (props) => {
-
-    if (props.token) return <Redirect to={"/"}/>
-
     return (
         <form onSubmit={props.handleSubmit}>
             <div className={s.fields}>

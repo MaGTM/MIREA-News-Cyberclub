@@ -60,14 +60,14 @@ export const loginUser = (data) => {
         authAPI.loginUser(data)
             .then((res) => {
                 if(res.message === "Something went wrong, try again") {
-                    dispatch(isLoading(false))
                     dispatch(setResult(res.message))
+                    dispatch(isLoading(false))
                     return
                 }
-                dispatch(isLoading(false))
                 dispatch(setUserData(res.userId, res.token, true))
                 localStorage.setItem('token', res.token)
                 localStorage.setItem('userId', res.userId)
+                dispatch(isLoading(false))
             })
     }
 }
@@ -78,29 +78,29 @@ export const createUser = (data) => {
         dispatch(isLoading(true))
         authAPI.createUser(data)
             .then((res) => {
-                dispatch(isLoading(false))
                 dispatch(setResult(res.message))
+                dispatch(isLoading(false))
                 if(res.message === 'User Created') {
                     dispatch(isLoading(true))
                     authAPI.loginUser(data)
                         .then((res) => {
                             if(res.status === 400) {
-                                dispatch(isLoading(false))
                                 dispatch(setResult(res.message))
+                                dispatch(isLoading(false))
                                 return
                             }
-                            dispatch(isLoading(false))
                             dispatch(setResult(res.message))
                             dispatch(setUserData(res.userId, res.token, true))
                             localStorage.setItem('token', res.token)
                             localStorage.setItem('userId', res.userId)
+                            dispatch(isLoading(false))
                         })
                 }
                 return res
             })
             .catch((e)=> {
-                dispatch(isLoading(false))
                 dispatch(setResult(false))
+                dispatch(isLoading(false))
             })
     }
 }
@@ -109,6 +109,7 @@ export const logoutUser = () => {
     return dispatch => {
         localStorage.removeItem('userId')
         localStorage.removeItem('token')
+        dispatch(setResult(null))
         dispatch(setUsername(null))
         dispatch(setUserData(null, null, false))
     }

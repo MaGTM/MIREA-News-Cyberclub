@@ -9,6 +9,7 @@ import Loading from "../../../common/Loading/Loading";
 
 // Components
 const Register = (props) => {
+    if (props.token) return <Redirect to={"/"}/>
     document.title = "Регистрация - МИРЭА"
     if (props.loading) {
         return <Loading/>

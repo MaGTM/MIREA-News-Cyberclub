@@ -88,8 +88,8 @@ export const createNewArticle = (data, token) => {
         dispatch(isLoading(true))
         newsAPI.createArticle(data, token)
             .then((res) => {
-                dispatch(isLoading(false))
                 dispatch(isArticleCreated(true))
+                dispatch(isLoading(false))
             })
     }
 }
