@@ -25,4 +25,16 @@
   border-radius: 2px;
 }
 
+@media screen and (max-width: 690px) {
+  .wrapper {
+    margin-bottom: 50px;
+  }
+  .wrapper .error {
+    position: absolute;
+    top: -70%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
 /*# sourceMappingURL=inputForm.module.css.map */

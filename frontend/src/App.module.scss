@@ -70,3 +70,19 @@ body {
   }
 }
 
+@media screen and (max-width: 920px) {
+  body {
+    .wrapper {
+      width: 735px;
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  body {
+    .wrapper {
+      width: 400px;
+    }
+  }
+}
+

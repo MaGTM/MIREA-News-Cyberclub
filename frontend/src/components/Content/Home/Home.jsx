@@ -44,7 +44,6 @@ const Home = (props) => {
             }
         }
     }
-    console.log(window.innerWidth)
     let height
 
     if(window.innerWidth >= 1570) {
@@ -52,6 +51,12 @@ const Home = (props) => {
     }
     else if (window.innerWidth >= 1310){
         height = Math.ceil(itemsArray.length/3)*397.5
+    }
+    else if (window.innerWidth >= 750){
+        height = Math.ceil(itemsArray.length/2)*397.5
+    }
+    else if (window.innerWidth < 750){
+        height = Math.ceil(itemsArray.length)*397.5
     }
     return (
         <div className={s.wrapper}>

@@ -126,5 +126,20 @@
     grid-template-areas: ". ." ". ." ". ." ". ." ". ." ". .";
   }
 }
+@media screen and (max-width: 920px) {
+  .wrapper .mainContent {
+    gap: 30px 10px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .wrapper .mainContent {
+    gap: 30px;
+    justify-content: center;
+    width: 350px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "." "." "." "." "." "." "." "." "." "." "." ".";
+  }
+}
 
 /*# sourceMappingURL=Home.module.css.map */

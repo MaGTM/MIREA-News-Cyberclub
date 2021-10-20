@@ -24,3 +24,15 @@
     border-radius: 2px;
   }
 }
+
+@media screen and (max-width: 690px) {
+  .wrapper {
+    margin-bottom: 50px;
+    .error {
+      position: absolute;
+      top: -70%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
