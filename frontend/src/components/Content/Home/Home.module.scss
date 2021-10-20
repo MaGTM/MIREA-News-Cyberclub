@@ -35,7 +35,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    gap: 30px 40px;
+    gap: 30px 90px;
     grid-template-areas:
     ". . . ."
     ". . . ."
@@ -43,6 +43,7 @@
 
     a {
       width: 350px;
+      height: 350px;
       .newsBlock {
         position: relative;
         box-shadow: 0 0 0 2px #196BB1 inset;

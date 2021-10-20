@@ -103,9 +103,8 @@ server.post('/getnews', (req, res) => {
   let newsBlocks = []
 
   newsBlocksId.forEach((id) => {
-    newsBlocks.push(router.db.get('articles').value()[id-1])
+    newsBlocks.push(router.db.get('articles').value()[router.db.get('articles').value().length - (id-1)])
   })
-
   res.json({
     newsBlocks: newsBlocks
   })

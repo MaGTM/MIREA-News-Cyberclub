@@ -31,11 +31,12 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  gap: 30px 40px;
+  gap: 30px 90px;
   grid-template-areas: ". . . ." ". . . ." ". . . .";
 }
 .wrapper .mainContent a {
   width: 350px;
+  height: 350px;
 }
 .wrapper .mainContent a .newsBlock {
   position: relative;
